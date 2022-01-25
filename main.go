@@ -18,7 +18,6 @@ func main() {
 	c := colly.NewCollector()
 
 	// Find and visit all links
-
 	c.OnHTML(".image", func(e *colly.HTMLElement) {
 		urlElement := e.DOM.Find("a").Eq(0)
 
@@ -42,6 +41,7 @@ func main() {
 		enc.Encode(products)
 		writeJSON(products)
 	}
+
 }
 
 func writeJSON(data []Product) {
