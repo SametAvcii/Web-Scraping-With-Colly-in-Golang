@@ -36,7 +36,6 @@ func main() {
 			Check = k.ChildText("div.col-xs-12.col-md-4.col-lg-4.product-cart-col>div.product-cart>div.price>div#indirimli-fiyat>span#indirimli")
 		}
 
-		fmt.Println(Check)
 		products := Product_Book{
 			Name:   Name,
 			Barkod: Barkod,
