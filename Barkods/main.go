@@ -78,6 +78,6 @@ func writeJSON2(data []Product_Book) {
 		log.Println("Unable to create the JSON file.")
 	}
 	_ = ioutil.WriteFile("barkods-data.json", file, 0644)
-	fmt.Println("Barkods Append. Go for Good!")
+	fmt.Println("Book information added successfully. Go for Good!")
 
 }
